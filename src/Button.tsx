@@ -6,11 +6,7 @@ type ButtonProps = {
   disabled?: boolean;
 };
 
-export const Button: React.FC<ButtonProps> = ({
-  label,
-  onClick,
-  disabled = false,
-}) => {
+export const Button: React.FC<ButtonProps> = ({label, onClick, disabled = false,}) => {
   const [isDisabled, setIsDisabled] = useState(disabled);
 
   const handleClick = async () => {
