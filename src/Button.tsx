@@ -16,7 +16,7 @@ export const Button: React.FC<ButtonProps> = ({
   const handleClick = async () => {
     setIsDisabled(true);  
     await onClick();
-    setIsDisabled(false);
+    setIsDisabled(false)
     
   }; 
 
